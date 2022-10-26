@@ -1,0 +1,144 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "~antd/dist/antd.css";
+@import "./modules/landing-page/LandingPage.scss";
+@import "./modules/dashboard/dashboard.scss";
+@import "./modules/xet-duyet/xet-duyet.scss";
+@import "./modules/confessions/confessionPage.scss";
+@import "./modules/confessions/confessionPage.scss";
+@import "./modules/study/study.scss";
+@import "./modules/account/auth.scss";
+@import "./modules/forms/form.scss";
+@layer base {
+
+  h1 {
+    @apply text-2xl;
+  }
+  h2 {
+    @apply text-xl;
+  }
+  h3 {
+    @apply text-lg;
+  }
+  blockquote,
+  dl,
+  dd,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  hr,
+  figure,
+  p,
+  pre {
+    margin: 0;
+  }
+  ol,
+  ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+
+  
+}
+@layer utilities{
+  .facebook-font{
+    font-family: Segoe UI Historic, Segoe UI, Helvetica, Arial, sans-serif !important;
+  }
+  .logo {
+    height: 32px;
+    margin: 16px;
+    
+  }
+
+  .site-layout-sub-header-background {
+    background: #fff;
+  }
+
+  .site-layout-background {
+    background: #fff;
+    border-radius: 0.65rem;
+  }
+    [data-theme="dark"] .site-layout-sub-header-background {
+      background: #141414;
+    }
+  .menu-dashboard-icon{
+    width: 1.25rem!important;
+    height: 1.25rem!important;
+    font-size: 1.25rem!important;
+  }
+  .imageSpin{
+    @keyframes spin {
+      from{
+      transform: rotateY(0deg);
+      }
+      to{
+      transform: rotateY(360deg);
+      }
+     }
+     @-webkit-keyframes spin{
+      from{-webkit-transform: rotateY(0deg);}
+      to{-webkit-transform: rotateY(360deg);}
+     }
+   
+      animation-name: spin;
+      animation-timing-function: linear;
+      animation-iteration-count: infinite;
+      animation-duration: 5s;
+      -webkit-animation-name: spin;
+      -webkit-animation-timing-function: linear;
+      -webkit-animation-iteration-count: infinite;
+      -webkit-animation-duration: 5s;
+     
+  }
+  .animation-hover:after {
+    background: none repeat scroll 0 0 transparent;
+    content: "";
+    height: 2px;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    @apply w-0 bg-[#F53855] left-1/2 block bottom-0 absolute;
+  }
+  .animation-active:after {
+    @apply left-0 w-full;
+  }
+  .animation-hover:hover:after {
+    @apply left-0 w-full;
+  }
+  .has-mask {
+		position: absolute;
+		clip: rect(10px, 150px, 130px, 10px);
+	}
+  .warning{
+    @apply text-yellow-800
+  }
+  .error{
+      @apply text-red-500
+  }
+  .imgs {
+    position: fixed;
+    height: 300px;
+    width: 300px;
+    top: 50px;
+    left: 50vw;
+    z-index: 100;
+}
+  .img {
+      border-radius: 5px;
+      overflow: hidden;
+      transition: all 0.2s;
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+
+  .no-scrollbar {
+    -ms-overflow-style: none; /* IE and Edge */
+    scrollbar-width: none; /* Firefox */
+  }
+
+}

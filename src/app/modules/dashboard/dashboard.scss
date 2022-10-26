@@ -1,0 +1,21 @@
+.dashboardPage{
+  .custom-scroll-y::-webkit-scrollbar{
+    width: 5px;
+  }
+  .custom-scroll-y::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0 , 0.3) 0px 0px 6px inset;
+    background-color: #b1b3b5;
+  }
+  .custom-scroll-y::-webkit-scrollbar-track {
+    background: #dadcdf;
+    border: 2px solid #ffffff;
+  }
+  .left-icon{
+    width: 2.5rem!important;
+    height: 2.5rem!important;
+    font-size: 1.25rem!important;
+    color: #e97293!important;
+    @apply bg-[#212325] flex items-center justify-center rounded-[0.75rem]
+  }
+}

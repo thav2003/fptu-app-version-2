@@ -1,0 +1,16 @@
+.studyPage{
+    .scrollbar-thumb-primary {
+        --scrollbar-thumb: #febc38!important;
+    }
+    .scrollbar-track-white {
+        --scrollbar-track: #fff!important;
+    }
+    .scrollbar-thin {
+        scrollbar-width: thin;
+    }
+    ::-webkit-scrollbar {
+        display: block;
+      }
+    
+
+}
